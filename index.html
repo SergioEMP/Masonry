@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Masonry Prueba</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grid-container">
+        <img class="grid-item" src="https://i.picsum.photos/id/316/500/700.jpg?hmac=J_NR4L9tVgjzVj-h2gpNgzHA9Pzgb7a7F7Nv1o549C8">
+        <img class="grid-item" src="https://i.picsum.photos/id/131/200/300.jpg?hmac=9q7mRSOguNBFGg_gPPRKlfjNINGjXWeDBTYPP1_gEas">
+        <img class="grid-item" src="https://i.picsum.photos/id/604/600/800.jpg?hmac=XHi4-T1VAZtnYl1d6SraC56vdsrpkeOchfmp0tB6Azg">
+        <img class="grid-item" src="https://i.picsum.photos/id/79/799/400.jpg?hmac=gsXAMmMQOUfVTs54FuvZ0kORNPPQ9ETFIAVn69wfDc4">
+        <img class="grid-item" src="https://i.picsum.photos/id/1077/200/800.jpg?hmac=kzLcNZG6fRzLY9lUeS7qrW_zJSpYy_RUuFf53rC-UWg">
+        <img class="grid-item" src="https://i.picsum.photos/id/40/350/350.jpg?hmac=fWIN2fccLpxfhShRFlF0r_nsSDFnzrOij3atgg5OzSk">
+        <img class="grid-item" src="https://i.picsum.photos/id/488/640/380.jpg?hmac=bbqByGQotSyBXT9cQklKA6CirvqJ4nD1cX5z-Sk-mgw">
+        <img class="grid-item" src="https://i.picsum.photos/id/177/400/640.jpg?hmac=assppQVCW2FQeRbJ3muPzxOBWMDhRklUVISO7AA4prM">
+        <img class="grid-item" src="https://i.picsum.photos/id/369/230/380.jpg?hmac=-HQRh2aY1eCoKuVm8wb4Pbx9CH7nhXhbyoI-40LgsfU">
+        <img class="grid-item" src="https://i.picsum.photos/id/829/370/280.jpg?hmac=eW2AwXhF837Xyq4cs2fQW3MjgkkT0pDExw0zbLAkDSk">
+        <img class="grid-item" src="https://i.picsum.photos/id/43/450/500.jpg?hmac=rvrOtshAJ6L1b0JsT0l2Nv8kSxWIpTkZnp645olwCpY">
+        <img class="grid-item" src="https://i.picsum.photos/id/1047/430/345.jpg?hmac=ySJIXvuc52E4fnSFcp9yja5ZrSCOWhyumvEqc7Hzdnc">
+        <img class="grid-item" src="https://i.picsum.photos/id/139/280/370.jpg?hmac=Hh9cyMlh2lN3Mzqnvuc0X9kWPgFvgszvDTybgQQHYf0">
+        <img class="grid-item" src="https://i.picsum.photos/id/91/550/700.jpg?hmac=Rd0tpkxNElrdOPgcK7G8U52oDncmELrXlUHOPBz0Rkc">
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script>
+        $('.grid-container').masonry({
+        // options
+        itemSelector: '.grid-item',
+        columnWidth: 240,
+        gutter: 20,
+        isFitWidh: true, 
+        });
+    </script>
+</body>
+</html>
